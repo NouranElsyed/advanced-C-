@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment
 {
-    internal class Sorting<T>:IComparable<T>
+    internal class Sorting<T> where T:IComparable<T>
     {
         public static void BubbleSort(T[] array)
         {
@@ -17,11 +17,11 @@ namespace Assignment
                     int modified = 0;
                     for (int k = 0; k < array.Length - i - 1; k++)
                     {
-                        //if (array[k].CompareTo(array[k + 1]) == 1)
-                        //{
-                        //    Swap(ref array[k], ref array[k + 1]);
-                        //    modified = 1;
-                        //}
+                        if (array[k].CompareTo(array[k + 1]) == 1)
+                        {
+                            Swap(ref array[k], ref array[k + 1]);
+                            modified = 1;
+                        }
                     }
                     if (modified == 0)
                         break;
