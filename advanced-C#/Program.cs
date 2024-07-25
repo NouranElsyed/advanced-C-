@@ -44,7 +44,7 @@ namespace advanced_C_
             Console.WriteLine("\n");
 
             int index = Helper<int>.SearchArray(numbers, 9);
-            Console.WriteLine(index.ToString());    
+            Console.WriteLine(index.ToString());  
 
         }
     }
