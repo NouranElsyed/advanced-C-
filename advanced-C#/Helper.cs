@@ -9,19 +9,19 @@ namespace advanced_C_
     internal class Helper<T> where T : IComparable<T>
     {
 
-    
-    
-        public static void BubbleSort(T[] array) 
+
+
+        public static void BubbleSort(T[] array)
         {
-            if (array is not null) 
+            if (array is not null)
             {
                 for (int i = 0; i < array.Length; i++)
                 {
                     for (int k = 0; k < array.Length - i - 1; k++)
                     {
-                        if (array[k].CompareTo(array[k+1])==1) 
+                        if (array[k].CompareTo(array[k + 1]) == 1)
                         {
-                            Swap(ref array[k], ref array[k+1]);
+                            Swap(ref array[k], ref array[k + 1]);
                         }
                     }
                 }
