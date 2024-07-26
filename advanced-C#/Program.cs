@@ -1,4 +1,4 @@
-﻿using advanced_C_.Generics;
+using advanced_C_.Generics;
 using System.Drawing;
 
 namespace advanced_C_
@@ -70,6 +70,7 @@ namespace advanced_C_
 
             //int index02 = Helper<int>.SearchArray(numbers, 9);
             //Console.WriteLine(index02.ToString());
+
 
         }
     }
